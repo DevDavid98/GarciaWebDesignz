@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Me - GarciaWebDesignz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static//css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="{{url_for('index')}}" class="logo"><strong>GarciaWebDesignz</strong> <span>by David</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{{url_for('index')}}">Home</a></li>
+							<li><a href="{{url_for('about')}}">About Garcia Web Designz</a></li>
+							<li><a href="{{url_for('my_work')}}">My Work</a></li>
+							<li><a href="{{url_for('education')}}">Certifications</a></li>
+							<li><a href="{{url_for('information')}}">FAQS</a></li>
+							<li><a href="{{url_for('pricing')}}">Pricing</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="https://wallpapercave.com/wp/wp2495056.png" alt="" />
+							</span>
+							<header class="major">
+								<h1>About David Garcia</h1>
+							</header>
+							<div class="content">
+								<p>Entrepreneur, 23, an aspiring developer.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Background</h2>
+									</header>
+									<p>My name is David. I am 23. My family is of Hispanic descent. I have family members that run their own businesses in plumbing, roofing, income tax preparation, residential rental property, construction, and insurance. I am one of the first to run my own business in the tech industry that involves coding and information technology (IT). Family and friends are what keep us together, as well as honesty and respect towards one another.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="#two" class="image">
+										<img src="https://www.teahub.io/photos/full/0-3105_gaming-aesthetic.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Hobbies</h3>
+											</header>
+											<p>I have hobbies that come and go or stay for the long run. I love to play video games and watch lore-driven movies and TV shows. I like to code to further my skills in my field and build computers. I like most music for the most part, as well as playing guitar when I have the time to do so. I would also hope to learn how to fix and repair mechanical parts on vehicles in the future.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="#" class="image">
+										<img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9uJTIwY29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Present</h3>
+											</header>
+											<p>My current plans is to learn much as possible in the tech industry such as "mastering" coding  and information technology. I am currrently learning how to make video games with the library called pygame and when im ready the unity game engine. So for now, learn much as possible and attend to my business at all times.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="#" class="image">
+										<img src="https://wallpapercave.com/wp/wp6308453.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Future</h3>
+											</header>
+											<p>The future for me is to have multiple businesses that involve software and information technology. I will begin to expand GarciaWebDeisgnz into a game studio that will create top-tier, high-quality games. The time will come when I'm ready to expand and explore new horizons. I will create my own simple steam game this year (2022) or later, and one day, play on PlayStation and Xbox.</p>
+											<ul class="actions">
+												<li><a href="https://store.steampowered.com/" class="button" target="_blank">Visit Steam</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Certifications & Education</h2>
+									</header>
+									<p>To instill my clients with confidence in my abilities with web development.</p>
+									<ul class="actions">
+										<li><a href="{{url_for('education')}}" class="button next">Take a look</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="{{url_for('me')}}">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="number">Phone Number</label>
+											<input type="tel" name="number" id="number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<span>devdavidg98@gmail.com</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<a href = "tel:+1-325-340-6465"><span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(325)340-6465</span></a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><a href= "https://www.google.com/maps/place/55+N+Chadbourne+St,+San+Angelo,+TX+76903/@31.4653698,-100.4404508,17z/data=!3m1!4b1!4m5!3m4!1s0x8657ef57b7df6003:0x280fd2c5f1b4486f!8m2!3d31.4653652!4d-100.4382621" target="_blank">55 North Chadbourne Street<br />
+										San Angelo, TX 76903<br />
+										USA</a></span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/GarciaWebDesignz" class="icon brands alt fa-facebook-f" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+
+								<li><a href="https://www.instagram.com/garciawebdesignz/" class="icon brands alt fa-instagram" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+
+								<li><a href="https://github.com/DevDavid98" class="icon brands alt fa-github" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+
+								<li><a href="https://www.linkedin.com/in/david-garcia-988642220/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2022 Garcia Web Designz</li><li>Backend development and design by: <a href="https://github.com/DevDavid98" target="_blank">David Garcia</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+			<script type="text/javascript">
+				if ( window.history.replaceState ) {
+  						window.history.replaceState( null, null, window.location.href );
+					}
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FAQs - GarciaWebDesignz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{url_for('index')}}" class="logo"><strong>Garcia Web Designz</strong> <span>by David</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{{url_for('index')}}">Home</a></li>
+							<li><a href="{{url_for('about')}}">About Garcia Web Designz</a></li>
+							<li><a href="{{url_for('me')}}">About Me</a></li>
+							<li><a href="{{url_for('my_work')}}">My Work</a></li>
+							<li><a href="{{url_for('education')}}">Certifications</a></li>
+							<li><a href="{{url_for('pricing')}}">Pricing</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Frequently Asked Qeustions</h1>
+									</header>
+
+
+									<span class="image main"><img src="https://owppharma.com/wp-content/uploads/2021/06/faqs-FI.jpg" alt="" /></span>
+
+									<header class="major">
+										<h2>What is the purpose of having a website?</h2>
+									</header>
+
+									<p>As you can probably tell by now, the main purpose of a website is to have the ability to express yourself however you want.
+
+									Both businesses and individuals value this.
+
+									It is why businesses use it to grow their brand and individuals use it to bring their personality online.</p>
+
+									<header class="major">
+										<h2>Should I Create A Website?</h2>
+									</header>
+
+									<p>All-in-all, there are many reasons to create a website.
+
+									Whether you want to generate more leads for your local business online, sell products in an e-commerce store, or build an online presence for yourself – a website can be a great idea to promote yourself and your business.</p>
+
+
+
+
+									<header class="major">
+										<h2>How long will it take to create my website?</h2>
+									</header>
+
+									<p>Depending on the complexity of the website. The website could take as long as 1 to 21 business days or more. The more information you give me, the faster the website is built. This information includes pictures, videos, about you, about your business, pricing etc.</p>
+
+									<header class="major">
+										<h2>What or how is the process?</h2>
+									</header>
+
+									<p>There are three phases for your website until it is finished and published online.</p>
+									<ul>
+										<li>Phase 1: Design, layout and backend development.</li>
+										<li>Phase 2: Content and information (You will provide me this information.)</li>
+										<li>Phase 3: Getting your website online and published.</li>
+									</ul>
+									
+									<header class="major">
+										<h2>How much will the website cost?</h2>
+									</header>
+
+									<p>Visit the pricing page here:</p>
+									<form action="{{url_for('pricing')}}">
+										<input type="submit" value="View Pricing Info" class="primary"/>
+									</form>
+
+									<header class="major">
+										<h2>Will Garcia Web Designz offer refunds?</h2>
+									</header>
+
+									<p>Refunds are only available within 1 business day of payment once you cancel your order. This will cancel any development being made for your website.</p>
+									
+
+									<header class="major">
+										<h2>I dont have any pictures for my website what do I do?</h2>
+									</header>
+
+									<p>If you dont have any pictures or logos for your website. I can use stock pictures via the internet if requested.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="{{url_for('information')}}">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="number">Phone Number</label>
+											<input type="tel" name="number" id="number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<span>devdavidg98@gmail.com</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<a href = "tel:+1-325-340-6465"><span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(325)340-6465</span></a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><a href= "https://www.google.com/maps/place/55+N+Chadbourne+St,+San+Angelo,+TX+76903/@31.4653698,-100.4404508,17z/data=!3m1!4b1!4m5!3m4!1s0x8657ef57b7df6003:0x280fd2c5f1b4486f!8m2!3d31.4653652!4d-100.4382621" target="_blank">55 North Chadbourne Street<br />
+										San Angelo, TX 76903<br />
+										USA</a></span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/GarciaWebDesignz" class="icon brands alt fa-facebook-f" target = '_blank'><span class="label">Facebook</span></a></li>
+
+								<li><a href="https://www.instagram.com/garciawebdesignz/" class="icon brands alt fa-instagram" target = '_blank'><span class="label">Instagram</span></a></li>
+
+								<li><a href="https://github.com/DevDavid98" class="icon brands alt fa-github" target = '_blank'><span class="label">GitHub</span></a></li>
+
+								<li><a href="https://www.linkedin.com/in/david-garcia-988642220/" class="icon brands alt fa-linkedin-in" target = '_blank'><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2022 Garcia Web Designz</li><li>Backend development and design by: <a href="https://github.com/DevDavid98" target="_blank">David Garcia</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+			<script type="text/javascript">
+				if ( window.history.replaceState ) {
+  						window.history.replaceState( null, null, window.location.href );
+					}
+			</script>
+
+	</body>
+</html>

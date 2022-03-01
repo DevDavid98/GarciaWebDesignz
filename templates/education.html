@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Certifications - GarciaWebDesignz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{url_for('index')}}" class="logo"><strong>Garcia Web Designz</strong> <span>by David</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{{url_for('index')}}">Home</a></li>
+							<li><a href="{{url_for('about')}}">About Garcia Web Designz</a></li>
+							<li><a href="{{url_for('me')}}">About Me</a></li>
+							<li><a href="{{url_for('my_work')}}">My Work</a></li>
+							<li><a href="{{url_for('information')}}">FAQS</a></li>
+							<li><a href="{{url_for('pricing')}}">Pricing</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>My Certifications</h1>
+									</header>
+
+
+									<p align="center"><iframe class = "certificate" src="https://www.credential.net/embed/665071db-8f0b-48c1-9408-896d84bf377d" height="700px" width="1300px">
+									</iframe></p>
+
+
+									<header class="major">
+										<h2>What are my certifications?</h2>
+									</header>
+
+									<p>I have earned three certifications in my years after highschool they include: Python Development, Computer Information Systems and ACT WorkKeys NCRC. One out of the three certifications are viewable online for the public. Each certificate clarifies I have the necessary abilities and knowledge to perform task within each field.</p>
+
+									<header class="major">
+										<h2>Python Development (2021)</h2>
+									</header>
+
+									<p>This certifiate clarifies that I know the basic and intermediate fundamentals of Python programming as well as SQL, Flask, HTML & CSS coding to create websites and computer applications.</p>
+									<ul class="actions">
+
+										<form action="https://www.credential.net/665071db-8f0b-48c1-9408-896d84bf377d#gs.mwtw7v">
+
+											<li><input type="submit" value="View Certificate" class="primary" formtarget="_blank" /></li>
+
+										</form>
+
+										<form action="https://teamtreehouse.com/">
+
+											<li><input type="submit" value="View Institution" formtarget="_blank" /></li>
+
+										</form>
+									</ul>
+
+									<header class="major">
+										<h2>Computer Information Systems (CIS) (2020)</h2>
+									</header>
+
+									<p>The CIS certificate clarifies that I know the basics of computer hardware and Operating systems (OS) mainly windows but not limited. This certifcate also goes of over the basics of networking and computer peripherals.</p>
+									<ul class="actions">
+										<form action="https://howardcollege.edu">
+											<li><input type="submit" value="View Institution" class="primary" formtarget="_blank" /></li>
+										</form>
+									</ul>
+									
+
+									<header class="major">
+										<h2>ACT WorkKeys NCRC Certification (2021)</h2>
+									</header>
+
+									<p>This credential is based on ACT’s world-renowned WorkKeys® assessments which remain the only proven system for linking job skills with workplace success. Knowledge and skills related to job tasks are the strongest predictors of work performance. By earning the NCRC, I have demonstrated the following skills: Problem solving, Critical thinking, Reading and using written, work-related text. Applying information from workplace documents to solve problems. Applying mathematical reasoning to work-related problems. Setting up and performing work-related mathematical calculations.
+									Locating, synthesizing, and applying information that is presented graphically. Comparing, summarizing, and analyzing information presented in multiple, related graphics</p>
+									<ul class="actions">
+										<form action="https://www.act.org/">
+											<li><input type="submit" value="View Institution" class="primary" formtarget="_blank" /></li>
+										</form>
+									</ul>
+
+									<header class="major">
+										<h2>High school Diploma (2017)</h2>
+									</header>
+
+									<p>A high school diploma is a North American academic school leaving qualification awarded upon high school graduation. The high school diploma is typically obtained after a course of study lasting four years, from grade 9 to grade 12.</p>
+									<ul class="actions">
+										<form action="https://lakeview.saisd.org/">
+											<li><input type="submit" value="View Institution" class="primary" formtarget="_blank" /></li>
+										</form>
+									</ul>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="{{url_for('my_work')}}">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="number">Phone Number</label>
+											<input type="tel" name="number" id="number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<span>devdavidg98@gmail.com</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<a href = "tel:+1-325-340-6465"><span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(325)340-6465</span></a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><a href= "https://www.google.com/maps/place/55+N+Chadbourne+St,+San+Angelo,+TX+76903/@31.4653698,-100.4404508,17z/data=!3m1!4b1!4m5!3m4!1s0x8657ef57b7df6003:0x280fd2c5f1b4486f!8m2!3d31.4653652!4d-100.4382621" target="_blank">55 North Chadbourne Street<br />
+										San Angelo, TX 76903<br />
+										USA</a></span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/GarciaWebDesignz" class="icon brands alt fa-facebook-f" target = '_blank'><span class="label">Facebook</span></a></li>
+
+								<li><a href="https://www.instagram.com/garciawebdesignz/" class="icon brands alt fa-instagram" target = '_blank'><span class="label">Instagram</span></a></li>
+
+								<li><a href="https://github.com/DevDavid98" class="icon brands alt fa-github" target = '_blank'><span class="label">GitHub</span></a></li>
+
+								<li><a href="https://www.linkedin.com/in/david-garcia-988642220/" class="icon brands alt fa-linkedin-in" target = '_blank'><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2022 Garcia Web Designz</li><li>Backend development and design by: <a href="https://github.com/DevDavid98" target="_blank">David Garcia</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+			<script type="text/javascript">
+				if ( window.history.replaceState ) {
+  						window.history.replaceState( null, null, window.location.href );
+					}
+			</script>
+
+	</body>
+</html>

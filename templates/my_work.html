@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Work - GarciaWebDesignz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{url_for('index')}}" class="logo"><strong>Garcia Web Designz</strong> <span>by David</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{{url_for('index')}}">Home</a></li>
+							<li><a href="{{url_for('about')}}">About Garcia Web Designz</a></li>
+							<li><a href="{{url_for('me')}}">About Me</a></li>
+							<li><a href="{{url_for('education')}}">Certifications</a></li>
+							<li><a href="{{url_for('information')}}">FAQS</a></li>
+							<li><a href="{{url_for('pricing')}}">Pricing</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>My Portfolio</h1>
+									</header>
+
+
+									<span class="image main"><img src="https://wallpaperaccess.com/full/796849.jpg" alt="" /></span>
+
+
+									<header class="major">
+										<h2>What is python programming?</h2>
+									</header>
+
+									<p>Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. - <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Wikipedia</a></p>
+
+									<header class="major">
+										<h2>Python Project One</h2>
+									</header>
+
+									<p>A console number guessing game that prompts a player to choose a number between a specified range of numbers. After the user guesses the correct number, display the number of attempts it took them to guess correctly.</p>
+									<form action="https://github.com/DevDavid98/Python-Project-1">
+										<input type="submit" value="View Code" class="primary" formtarget="_blank" />
+									</form>
+
+									<header class="major">
+										<h2>Python Project Two</h2>
+									</header>
+
+									<p>A console-based basketball team statistics tool to help you divide up a group of players into teams. With knowledge of important Python data structures like lists and dictionaries for this project.</p>
+									<form action="https://github.com/DevDavid98/Python-Project-2">
+										<input type="submit" value="View Code" class="primary" formtarget="_blank" />
+									</form>
+
+									<header class="major">
+										<h2>Python Project Three</h2>
+									</header>
+
+									<p>A word guessing game: "Phrase Hunter." Using Python and OOP (Object-Oriented Programming) approaches to select a phrase at random, hidden from the player. A player tries to guess the phrase by inputting individual characters. Can they guess the phrase before they run out of attempts?</p>
+									<form action="https://github.com/DevDavid98/Python-Project-3">
+										<input type="submit" value="View Code" class="primary" formtarget="_blank" />
+									</form>
+
+									<header class="major">
+										<h2>Python Project Four</h2>
+									</header>
+
+									<p>Using knowledge of CSV and File I/O and database ORMs to build a console application that allows you to easily interact with data for a store's inventory. The data needs to be cleaned from the CSV before it is added to the database.</p>
+									<form action="https://github.com/DevDavid98/Python-Project-4">
+										<input type="submit" value="View Code" class="primary" formtarget="_blank" />
+									</form>
+
+									<span class="image main"><img src="https://wallpapercave.com/wp/wp2742456.jpg" alt="" /></span>
+
+									<header class="major">
+										<h2>What is HTML & CSS?</h2>
+									</header>
+
+									<p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications.</p>
+
+									<header class="major">
+										<h2>Portfolio website (Offline)</h2>
+									</header>
+
+									<p>The application lets the user add or edit project information. When adding or editing a project, the application prompts the user for title, date, skills, description, and a link to a repo. The results for these entries are stored in a database and displayed on the homepage and any other pages that need the information from the database. This project uses Python, Flask, SQLAlchemy, HTML and CSS with some knowledge of HTTP.</p>
+
+									<form action="https://github.com/DevDavid98/Portfolio">
+										<input type="submit" value="View Code" class="primary" formtarget="_blank" />
+									</form>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="{{url_for('my_work')}}">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="number">Phone Number</label>
+											<input type="tel" name="number" id="number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<span>devdavidg98@gmail.com</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<a href = "tel:+1-325-340-6465"><span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(325)340-6465</span></a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><a href= "https://www.google.com/maps/place/55+N+Chadbourne+St,+San+Angelo,+TX+76903/@31.4653698,-100.4404508,17z/data=!3m1!4b1!4m5!3m4!1s0x8657ef57b7df6003:0x280fd2c5f1b4486f!8m2!3d31.4653652!4d-100.4382621" target="_blank">55 North Chadbourne Street<br />
+										San Angelo, TX 76903<br />
+										USA</a></span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/GarciaWebDesignz" class="icon brands alt fa-facebook-f" target = '_blank'><span class="label">Facebook</span></a></li>
+
+								<li><a href="https://www.instagram.com/garciawebdesignz/" class="icon brands alt fa-instagram" target = '_blank'><span class="label">Instagram</span></a></li>
+
+								<li><a href="https://github.com/DevDavid98" class="icon brands alt fa-github" target = '_blank'><span class="label">GitHub</span></a></li>
+
+								<li><a href="https://www.linkedin.com/in/david-garcia-988642220/" class="icon brands alt fa-linkedin-in" target = '_blank'><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2022 Garcia Web Designz</li><li>Backend development and design by: <a href="https://github.com/DevDavid98" target="_blank">David Garcia</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+			<script type="text/javascript">
+				if ( window.history.replaceState ) {
+  						window.history.replaceState( null, null, window.location.href );
+					}
+			</script>
+
+	</body>
+</html>

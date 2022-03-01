@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GarciaWebDesignz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<a href="{{url_for('index')}}" class="logo"><strong>Garcia Web Designz</strong> <span>by David</span></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="{{url_for('index')}}">Home</a></li>
+						<li><a href="{{url_for('about')}}">About Garcia Web Designz</a></li>
+						<li><a href="{{url_for('me')}}">About Me</a></li>
+						<li><a href="{{url_for('my_work')}}">My work</a></li>
+						<li><a href="{{url_for('education')}}">Certifications</a></li>
+						<li><a href="{{url_for('information')}}">FAQS</a></li>
+						<li><a href="{{url_for('pricing')}}">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+			<!-- Banner -->
+				<section id="banner" class="major">
+					<div class="inner">
+						<header class="major">
+							<h1>Hi, my name is David Garcia</h1>
+						</header>
+						<div class="content">
+							<p>I develop professional websites & website resumes for you & your company. Get you and your company online and into the public view today.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button next scrolly">Get Started</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="one" class="tiles">
+							<article>
+								<span class="image">
+									<img src="https://images.hdqwalls.com/download/aesthetic-of-the-future-4h-1920x1080.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="{{url_for('me')}}" class="link">About Me</a></h3>
+									<p>David Garcia</p>
+								</header>
+							</article>
+							<article>
+								<span class="image">
+									<img src="https://cdn.wallpapersafari.com/96/8/IVLlE9.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="{{url_for('about')}}" class="link">About Garcia Web Designz</a></h3>
+									<p>Founded January 1st, 2022</p>
+								</header>
+							</article>
+							<article>
+								<span class="image">
+									<img src="https://owppharma.com/wp-content/uploads/2021/06/faqs-FI.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="{{url_for('information')}}" class="link">Basic information</a></h3>
+									<p>FAQs</p>
+								</header>
+							</article>
+							<article>
+								<span class="image">
+									<img src="https://wallpaperaccess.com/full/2399244.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="{{url_for('pricing')}}" class="link">Pricing</a></h3>
+									<p>Offordable and business friendly</p>
+								</header>
+							</article>
+							<article>
+								<span class="image">
+									<img src="https://wallpapercave.com/wp/wp7530971.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="{{url_for('my_work')}}" class="link">My Work</a></h3>
+									<p>Finished and unfinshed work</p>
+								</header>
+							</article>
+							<article>
+								<span class="image">
+									<img src="https://allianceofbwa.org/wp-content/uploads/2019/06/ContactUs.jpg" alt="" />
+								</span>
+								<header class="major">
+									<h3><a href="#contact" class="links">Contact Us</a></h3>
+									<p>To get started</p>
+								</header>
+							</article>
+						</section>
+
+					<!-- Two -->
+						<section id="two">
+							<div class="inner">
+								<header class="major">
+									<h2>Certifications & Education</h2>
+								</header>
+								<p>To instill my clients with confidence in my abilities with web development.</p>
+								<ul class="actions">
+									<li><a href="{{url_for('education')}}" class="button next">Take a look</a></li>
+								</ul>
+							</div>
+						</section>
+
+				</div>
+
+			<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form method="post" action="{{url_for('index')}}">
+								{% for message in get_flashed_messages() %}
+								{% endfor %}
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" required />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" required />
+									</div>
+									<div class="field">
+										<label for="number">Phone Number</label>
+										<input type="tel" name="number" id="number" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890" />
+									</div>							
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6" required></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>devdavidg98@gmail.com</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<a href = "tel:+1-325-340-6465"><span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(325)340-6465</span></a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span><a href= "https://www.google.com/maps/place/55+N+Chadbourne+St,+San+Angelo,+TX+76903/@31.4653698,-100.4404508,17z/data=!3m1!4b1!4m5!3m4!1s0x8657ef57b7df6003:0x280fd2c5f1b4486f!8m2!3d31.4653652!4d-100.4382621" target="_blank">55 North Chadbourne Street<br />
+									San Angelo, TX 76903<br />
+									USA</a></span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/GarciaWebDesignz" class="icon brands alt fa-facebook-f" target = '_blank'><span class="label">Facebook</span></a></li>
+
+							<li><a href="https://www.instagram.com/garciawebdesignz/" class="icon brands alt fa-instagram" target = '_blank'><span class="label">Instagram</span></a></li>
+
+							<li><a href="https://github.com/DevDavid98" class="icon brands alt fa-github" target = '_blank'><span class="label">GitHub</span></a></li>
+
+							<li><a href="https://www.linkedin.com/in/david-garcia-988642220/" class="icon brands alt fa-linkedin-in" target = '_blank'><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2022 Garcia Web Designz</li><li>Backend development and design by: <a href="https://github.com/DevDavid98" target="_blank">David Garcia</a></li>
+						</ul>
+					</div>
+				</footer>
+			<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+			<script type="text/javascript">
+				if ( window.history.replaceState ) {
+  						window.history.replaceState( null, null, window.location.href );
+					}
+			</script>
+
+		</div>
+	</body>
+</html>
